@@ -1,15 +1,14 @@
 #include "stdio.h"
 #include "math.h"
-#include "ctype.h"
 
 int main(void)
 {
     double  a, b, ans;
     char    op;
 
-    printf( "加減乗除(+,-,*,/)ができます。指定例:2+5、終了時はq\n" );
+    printf( "加減乗除(+,-,*,/)ができます。\n" );
     while( 1 ) {
-        printf( "ready : " );
+        printf( "Ready : " );
         if( scanf( "%lf %c %lf", &a, &op, &b ) != 3 ) break;
         switch( op ) {
         case '+': ans = a + b; break;
