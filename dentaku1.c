@@ -6,7 +6,7 @@ int main(void)
     double  a, b, ans;
     char    op;
 
-    printf( "加減乗除(+,-,*,/)ができます。\n" );
+    printf( "四則演算をします。\n" );
     while( 1 ) {
         printf( "Ready : " );
         scanf( "%lf %c %lf", &a, &op, &b );
@@ -15,11 +15,11 @@ int main(void)
         case '-': ans = a - b; break;
         case '*': ans = a * b; break;
         case '/': if( b == 0.0 ) {
-                     printf( "Error!(ゼロでの割算はできません)\n" );
+                     printf( "ゼロでの割算はできません)\n" );
                      continue;
                   }
                   ans = a / b; break;
-        default:  printf( "Error!(演算記号の指定が誤りです)\n" );
+        default:  printf( "演算記号が誤りです)\n" );
                   continue;
         }
         printf( "= %g\n", ans );
