@@ -9,7 +9,7 @@ int main(void)
     printf( "加減乗除(+,-,*,/)ができます。\n" );
     while( 1 ) {
         printf( "Ready : " );
-        if( scanf( "%lf %c %lf", &a, &op, &b ) != 3 ) break;
+        scanf( "%lf %c %lf", &a, &op, &b );
         switch( op ) {
         case '+': ans = a + b; break;
         case '-': ans = a - b; break;
