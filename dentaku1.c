@@ -2,10 +2,10 @@
 #include "math.h"
 
 #define PI 3.141592
-double rad1, rad2;
-double  x, y, limit1, limit2, answer;
-        char    a,b,c;
-        char dammy;
+	double rad1, rad2;
+	double x, y, limit1, limit2, answer;
+	char a,b,c,s,t;
+	char dammy;
 
  
 
@@ -14,20 +14,16 @@ int main(void)
 	printf("四則演算をします\n");
 	
 	while(1){
-	printf( "Ready \n" );
-	scanf("%c",&b);
-	scanf("%c",&dammy);
-	scanf("%lf",&x);
-	scanf("%c",&dammy);
-       	scanf("%c",&a);
-	scanf("%c",&dammy);
-	scanf("%c",&c);
-	scanf("%c",&dammy);
-	scanf("%lf",&y);
-	scanf("%c",&dammy);
+		printf( "Ready: \n" );
+		scanf("%c",&b);		//sin cos tan
+		scanf("%lf",&x);	//数字
+       		scanf("%c",&a);		//+-*/
+		scanf("%c",&c);		//sin cos tan
+		scanf("%lf",&y);	//数字
+		scanf("%c",&dammy);	//Enter
 	
-	rad1 = x * PI / 180;
-	rad2 = y * PI / 180;
+		if(b == s || c || t) rad1 = x * PI / 180;	//三角関数の時のみ実行
+		if(c == s || c || t) rad2 = y * PI / 180;	//三角関数の時のみ実行
 	switch(b){
 		case 's':
 			limit1 = sin(rad1); break;
@@ -64,12 +60,9 @@ int main(void)
 			}
 			answer = limit1 / limit2; break;
 		
-		default:  printf( "演算記号が誤りです\n" );
-	           break;  
+		default:  printf( "演算記号が誤りです\n"); break;  
 	}
 	printf("=%lf\n",answer);
-	printf(" a = %c\n b = %c\n c = %c\n x = %lf\n y = %lf\n rad1 = %lf\n rad2 = %lf\n",a,b,c,x,y,rad1,rad2);
-
-}
+	}	
 
 }   
