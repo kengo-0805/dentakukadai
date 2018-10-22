@@ -16,14 +16,19 @@ int main(void)
 	while(1){
 	printf( "Ready \n" );
 	scanf("%c",&b);
+	scanf("%c",&dammy);
 	scanf("%lf",&x);
+	scanf("%c",&dammy);
        	scanf("%c",&a);
+	scanf("%c",&dammy);
 	scanf("%c",&c);
+	scanf("%c",&dammy);
 	scanf("%lf",&y);
 	scanf("%c",&dammy);
 	
+	rad1 = x * PI / 180;
+	rad2 = y * PI / 180;
 	switch(b){
-		rad1 = x * PI / 180;
 		case 's':
 			limit1 = sin(rad1); break;
 		case 'c':
@@ -35,7 +40,7 @@ int main(void)
 	
 
 	switch(c){
-		rad2 = y * PI / 180;
+		
         	case 's':
 			limit2 = sin(rad2); break;
         	case 'c':
@@ -59,10 +64,11 @@ int main(void)
 			}
 			answer = limit1 / limit2; break;
 		
-	//default:  printf( "演算記号が誤りです\n" );
-	//           breaak  
+		default:  printf( "演算記号が誤りです\n" );
+	           break;  
 	}
 	printf("=%lf\n",answer);
+	printf(" a = %c\n b = %c\n c = %c\n x = %lf\n y = %lf\n rad1 = %lf\n rad2 = %lf\n",a,b,c,x,y,rad1,rad2);
 
 }
 
