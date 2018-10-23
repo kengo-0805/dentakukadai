@@ -17,7 +17,7 @@ int main(void)
 		printf( "Ready:" );
 		scanf("%c",&b);		//sin cos tan
 		scanf("%lf",&x);	//数字
-       		scanf("%c",&a);		//+-*/
+		scanf("%c",&a);		//+-*/
 		scanf("%c",&c);		//sin cos tan
 		scanf("%lf",&y);	//数字
 		scanf("%c",&dammy);	//Enter
