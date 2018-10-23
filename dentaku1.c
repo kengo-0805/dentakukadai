@@ -14,7 +14,7 @@ int main(void)
 	printf("四則演算をします\n");
 	
 	while(1){
-		printf( "Ready: \n" );
+		printf( "Ready:" );
 		scanf("%c",&b);		//sin cos tan
 		scanf("%lf",&x);	//数字
        		scanf("%c",&a);		//+-*/
