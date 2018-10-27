@@ -14,7 +14,7 @@ int main(void)
 	printf("四則演算をします\n終了するときはeを入力してください\n");
 	
 	while(1){
-		printf( "Ready:" );
+		printf( "Ready:" );	//SHIMAKASU
 		scanf("%c",&b);		//sin cos tan
 		if(b == 'e')break;	//終了条件
 		scanf("%lf",&x);	//数字
