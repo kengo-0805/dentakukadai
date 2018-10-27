@@ -16,8 +16,7 @@ int main(void)
 	while(1){
 		printf( "Ready:" );
 		scanf("%c",&b);		//sin cos tan
-		if(b == 'e')break;
-		printf("%c",b);
+		if(b == 'e')break;	//終了条件
 		scanf("%lf",&x);	//数字
 		scanf("%c",&a);		//+-*/
 		scanf("%c",&c);		//sin cos tan
@@ -41,7 +40,6 @@ int main(void)
 	
 
 	switch(c){
-		
         	case 's':
 			limit2 = sin(rad2); break;
         	case 'c':
@@ -55,7 +53,7 @@ int main(void)
         }
 	
 	
-	switch(a) {
+	switch(a){
 		case '+':
 			answer = limit1 + limit2; break;
 		case '-':
