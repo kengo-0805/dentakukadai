@@ -3,7 +3,7 @@
 
 #define PI 3.141592
 	double rad1, rad2;
-	double x, y, limit1, limit2, answer;
+	double x, y, limit1, limit2, answer,restert;
 	char a,b,c,s,t,e;
 	char dammy;
 
