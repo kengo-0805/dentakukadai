@@ -80,7 +80,7 @@ int main(void)
 
 		printf("%lf",limit1);
 		scanf("%c",&a);		//+-*/
-		//if(a == 'e')break;	//終了条件
+		if(a == 'e')break;	//終了条件
 		scanf("%c",&c);		//sin cos tan
 		scanf("%lf",&y);	//数字
 		scanf("%c",&dammy);	//Enter
